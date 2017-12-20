@@ -1,0 +1,247 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@import url('http://fonts.googleapis.com/css?family=Lato:300');   /*Icons for sociaolLinks*/
+
+body {
+    zoom: 90%;
+    background: #372650;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 64%;
+    margin: 0 auto;
+    box-shadow: -11px 0 11px 0 #888888, 11px 2px 11px 0 #888888;
+    background: white;
+}
+
+a {
+    text-decoration: none; /*remove underline of hypelink*/
+
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding-left: 13%;
+}
+
+ul li {
+    display: inline;
+    float: left;
+    width: 14%;
+    height: 29px;
+    border-right: 1px solid #FFF;
+}
+
+li a {
+    display: block;
+    font: bold 17px Lato, sans-serif;
+    color: #d7182a;
+    text-decoration: none;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 10px 20px 10px 20px;
+    line-height: 18px;
+    text-indent: 15px;
+}
+
+[title~=side] {
+    /*  selector is used to select elements with an attribute value containing a specified word.*/
+    margin: 8px 15px 0 13px;
+    float: right;
+    width: 44%;
+
+}
+
+#nav li:hover {
+    background-color: #ffff99;
+}
+
+#nav li:active {
+    background-color: #ffff99;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+.title {
+    margin-bottom: 4px;
+}
+
+.title:hover {
+    cursor: pointer;
+}
+
+footer {
+    display: block;
+    background: darkgray;
+    margin-top: 1%;
+    clear: both;
+}
+
+.footer-social-icons {
+    display: block;
+    width: 100%;
+}
+
+.social-icon {
+    color: #fff;
+}
+
+.social-icons {
+    padding: 3px 0 0 0;
+    height: 55px;
+    margin: 0 auto;
+    width: 36%;
+}
+
+.social-icons li {
+    display: inline;
+    border-right: none;
+    height: 55px;
+    width: 98px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    height: 55px;
+}
+
+.fa-facebook {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+
+.fa-instagram {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+
+.fa-instagram:hover {
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+    linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+
+.fa-youtube {
+    padding: 10px 14px;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+
+#mainsection {
+    margin-top: 100px;
+}
+
+form {
+    float: left;
+    width: 39%;
+    margin-left: 24px;
+}
+
+iframe {
+    padding: 23px 18px 14px 6px;
+    float: right;
+    width: 750px;
+    height: 629px;
+}
+
+#title {
+    font-size: 30px;
+    padding: 5px 0 5px 0;
+    width: 250px;
+}
+
+label {
+    font-size: 21px;
+    width: 177px;
+    display: inline-block;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+    padding: 6px 27px 6px 21px;
+    margin: 9px 2px 5px 9px;
+    border-radius: 5px;
+    width: 151px;
+}
+
+.massagess,#requiredmessage {
+    vertical-align: top;
+    padding-top: 12px;
+}
+textarea {
+    border-radius: 5px;
+    margin: 9px 0 5px 9px;
+    width: 201px;
+    height: 158px;
+    resize: none;
+
+}
+
+#required {
+    width: 412px;
+    font-size: 22px;
+    text-align: center;
+}
+
+#button {
+    position: relative;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    margin: 9px 146px;
+    font-size: 16px;
+    width: 122px;
+    background-image: linear-gradient(to bottom, #fee100, #ffc705);
+    border-radius: 9px;
+}
+
+input[type="submit"]:hover {
+    background: #ffff99 none;
+}
+
+.rights {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.rights > p {
+    text-align: center;
+}
