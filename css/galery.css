@@ -1,11 +1,14 @@
 * {
+    margin: 0;
+    padding: 0;
+}
+* {
     box-sizing: border-box;
 }
 
 body {
     background: #372650;
     color: white;
-    padding: 20px;
     font-family: Arial, serif;
 }
 
@@ -55,4 +58,47 @@ h1 {
 /* The "show" class is added to the filtered elements */
 .show {
     display: block;
+}
+
+.footer {
+    padding: 12px 5px 12px 15px;
+    width: 100%;
+    display: flex;
+    background: #9041c1;
+    color: black;
+}
+
+.footer > div {
+    flex: 1; /*grow*/
+}
+
+.rights {
+    text-align: center;
+    font-weight: bold;
+    background: #9041c1;
+    padding: 12px 12px 12px 12px;
+    color: black;}
+
+
+ul {
+    list-style-type: none;
+}
+
+a:link {
+    /* Applies to all unvisited links */
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    /* Applies to all visited links */
+    text-decoration:  none;
+    font-weight:      bold;
+    background-color: #ddd;
+    color:            black;
+}
+.last{
+    padding-left: 102px;
+}
+.input{
+    padding: 25px 5px 5px 25px;
 }

@@ -1,7 +1,9 @@
 filterSelection("all");        // Execute the function and show all columns
 function filterSelection(c) {
     let x = document.getElementsByClassName("column");
-    if (c === "all") c = "";
+    if (c == "all"){
+        c = "";
+    }
     // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
     for (let i = 0; i < x.length; i++) {
         RemoveClass(x[i], "show");
