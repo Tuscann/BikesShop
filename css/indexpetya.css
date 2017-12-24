@@ -159,16 +159,7 @@ body {
 /*---------------slideshow pics------------*/
 .mySlides {
     height: 400px;
-
-    /*padding-left: 40px;*/
-    /*position: relative;*/
     margin: auto;
-
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*width:100%;*/
-    /*display: none;*/
 }
 
 /*--------------FOOTER-----------------------*/
@@ -272,7 +263,7 @@ img {
 
 .footer {
     padding: 12px 5px 12px 15px;
-    width: 100%;
+    /*width: 100%;*/
     display: flex;
     background: #9041c1;
 }
@@ -297,6 +288,10 @@ a:link {
     text-decoration: none;
     color: black;
 }
+.mySlides a:link{
+    color: white;
+}
+
 a:visited {
     /* Applies to all visited links */
     text-decoration:  none;
@@ -304,6 +299,9 @@ a:visited {
     background-color: #ddd;
     color:            black;
 }
-.before{
-    padding-left: 20px;
+.mySlides a:visited{
+    color: white;
 }
+/*.before{*/
+    /*padding-left: 10px;*/
+/*}*/

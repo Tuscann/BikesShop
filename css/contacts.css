@@ -12,7 +12,7 @@ body {
 }
 
 #container {
-    width: 88%;
+    width: 95%;
     margin: 0 auto;
     box-shadow: -11px 0 11px 0 #888888, 11px 2px 11px 0 #888888;
     background: white;
@@ -26,7 +26,7 @@ a {
 ul {
     list-style-type: none;
     overflow: hidden;
-    padding-left: 13%;
+    /*padding-left: 13%;*/
 }
 
 ul li {
@@ -34,15 +34,12 @@ ul li {
     float: left;
     width: 14%;
     height: 29px;
-    border-right: 1px solid #FFF;
 }
 
 li a {
     display: block;
-    font: bold 17px Lato, sans-serif;
-    color: #d7182a;
     text-decoration: none;
-    text-align: center;
+
 }
 
 p {
@@ -84,14 +81,13 @@ li:last-child {
 
 footer {
     display: block;
-    background: darkgray;
-    margin-top: 1%;
     clear: both;
 }
 
 .footer-social-icons {
     display: block;
     width: 100%;
+    background: #9041c1;
 }
 
 .social-icon {
@@ -177,7 +173,7 @@ form {
 iframe {
     padding: 23px 18px 14px 6px;
     float: right;
-    width: 750px;
+    width: 730px;
     height: 629px;
 }
 
@@ -244,4 +240,43 @@ input[type="submit"]:hover {
 
 .rights > p {
     text-align: center;
+}
+
+.footer {
+    padding: 12px 12px 32px 15px;
+    /*width: 100%;*/
+    display: flex;
+    background: #9041c1;
+}
+
+.footer > div {
+    flex: 1; /*grow*/
+}
+
+.rights {
+    text-align: center;
+    font-weight: bold;
+    background: #9041c1;
+    padding: 12px 12px 12px 12px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a:link {
+    /* Applies to all unvisited links */
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    color: black;
+}
+
+.last ul li {
+    float: none;
+}
+.col-md-4 p{
+    margin: 0;
+    text-indent: 0px;
 }
