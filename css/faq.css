@@ -2,24 +2,13 @@
     margin: 0;
     padding: 0;
 }
+.textPage{
+    padding: 12px 12px 12px 12px;
 
-.container {
-    display: flex;
-    color: white;
-}
-
-.container > div {
-    flex: 1; /*grow*/
-
-}
-
-body {
-    background: #372650;
 }
 
 .footer {
     padding: 12px 5px 12px 15px;
-    width: 100%;
     display: flex;
     background: #9041c1;
 }
@@ -45,41 +34,23 @@ a:link {
     color: black;
 }
 
-.first a:link {
-    color:#F7F4D9;
+.mySlides a:link{
+    color: white;
 }
-
 
 a:visited {
     /* Applies to all visited links */
-    text-decoration: none;
-    font-weight: bold;
+    text-decoration:  none;
+    font-weight:      bold;
     background-color: #ddd;
-    color: black;
+    color:            black;
 }
-.first a:visited{
-    color:#F7F4D9;
-}
-
-.last {
-
-    width: 300px;
-}
-
-.iframe {
-    display: flex;
-    justify-content: center;
-    padding: 15px 0 15px 0;
-}
-.category{
+.mySlides a:visited{
     color: white;
 }
-.first{
-    color: white;
-}
+
+
 .last a:hover,.before a:hover {
-    /*color: red;*/
     background: #f141f4;
     font-weight: bold;
-
 }

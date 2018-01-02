@@ -37,7 +37,7 @@ h1 {
 .column {
     float: left;
     width: 33.33%;
-    display: none; /* Hide columns by default */
+        /*display: none; !* Hide columns by default *!*/
 }
 
 /* Clear floats after rows */
@@ -101,4 +101,14 @@ a:visited {
 }
 .input{
     padding: 25px 5px 5px 25px;
+}
+.last a:hover,.before a:hover {
+    /*color: red;*/
+    background: #f141f4;
+    font-weight: bold;
+
+}
+h2{
+    padding: 25px 0 25px 0;
+    text-align: center;
 }

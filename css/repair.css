@@ -88,3 +88,9 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
     background: #FFF
 }
+.last a:hover,.before a:hover {
+    /*color: red;*/
+    background: #f141f4;
+    font-weight: bold;
+
+}

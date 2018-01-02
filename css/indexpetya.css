@@ -288,6 +288,7 @@ a:link {
     text-decoration: none;
     color: black;
 }
+
 .mySlides a:link{
     color: white;
 }
@@ -302,6 +303,9 @@ a:visited {
 .mySlides a:visited{
     color: white;
 }
-/*.before{*/
-    /*padding-left: 10px;*/
-/*}*/
+
+
+.last a:hover,.before a:hover {
+    background: #f141f4;
+    font-weight: bold;
+}

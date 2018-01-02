@@ -102,3 +102,9 @@ a:visited {
 .mySlides a:visited{
     color: white;
 }
+.last a:hover,.before a:hover {
+    /*color: red;*/
+    background: #f141f4;
+    font-weight: bold;
+
+}
