@@ -20,7 +20,7 @@ body {
 .img-w {
     position: absolute;
     width: 100%;
-    height: 74%;
+    height: 75%;
     background-size: cover;
     background-position: center;
     cursor: pointer;
@@ -65,7 +65,7 @@ body {
     padding: 12px 5px 12px 15px;
     /*width: 100%;*/
     display: flex;
-    background: #9041c1;
+    background: #34495e;
 }
 
 .footer > div {
@@ -75,7 +75,7 @@ body {
 .rights {
     text-align: center;
     font-weight: bold;
-    background: #9041c1;
+    background: #34495e;
     padding: 12px 12px 12px 12px;
 }
 
@@ -103,8 +103,150 @@ a:visited {
     color: white;
 }
 .last a:hover,.before a:hover {
-    /*color: red;*/
-    background: #f141f4;
+    background: #3E1B31;
     font-weight: bold;
 
+}
+
+
+/*----------------------MENU----------------------*/
+
+/* Clearing floats */
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/* Mini reset, no margins, paddings or bullets */
+.menu, .submenu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 999;
+}
+
+/* Main level */
+.menu {
+    margin: 50px auto;
+    width: 800px;
+    width: -moz-fit-content;
+    width: fit-content;
+    z-index: 999;
+}
+
+.menu > li {
+    background: #34495e;
+    float: left;
+    position: relative;
+    transform: skewX(25deg);
+    z-index: 999;
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    z-index: 999;
+}
+
+.menu li:hover {
+    background: #3E1B31; /*цвят на активното поле*/
+}
+
+.menu > li > a {
+    transform: skewX(-25deg);
+    padding: 1em 2em;
+    z-index: 999;
+}
+
+/* Dropdown */
+.submenu {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+    transform: skewX(-25deg);
+    transform-origin: left top;
+    /* z-index: 999;*/
+}
+
+.submenu li {
+    background-color: #34495e;
+    position: relative;
+    overflow: hidden;
+}
+
+.submenu > li > a {
+    padding: 1em 2em;
+}
+
+.submenu > li::after {
+    content: '';
+    position: absolute;
+    top: -125%;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .9);
+}
+
+/* Odd stuff */
+.submenu > li:nth-child(odd) {
+    transform: skewX(-25deg) translateX(0);
+}
+
+.submenu > li:nth-child(odd) > a {
+    transform: skewX(25deg);
+}
+
+.submenu > li:nth-child(odd)::after {
+    right: -50%;
+    transform: skewX(-25deg) rotate(3deg);
+}
+
+/* Even stuff */
+.submenu > li:nth-child(even) {
+    transform: skewX(25deg) translateX(0);
+}
+
+.submenu > li:nth-child(even) > a {
+    transform: skewX(-25deg);
+}
+
+.submenu > li:nth-child(even)::after {
+    left: -50%;
+    transform: skewX(25deg) rotate(3deg);
+}
+
+/* Show dropdown */
+.submenu, .submenu li {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.submenu li {
+    transition: .2s ease transform;
+}
+
+.menu > li:hover .submenu, .menu > li:hover .submenu li {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu > li:hover .submenu li:nth-child(even) {
+    transform: skewX(25deg) translateX(15px);
+}
+
+.menu > li:hover .submenu li:nth-child(odd) {
+    transform: skewX(-25deg) translateX(-15px);
 }

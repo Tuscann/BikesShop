@@ -2,43 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Zhivko Zhivkov Nedyalkov    Petya Stoyanova"/>
+    <meta name="author" content="Zhivko Zhivkov Nedyalkov, Petya Savova Stoyanova"/>
     <!–– автори на страницата ––>
-    <meta name="description" content="Bikes shop"/>
+    <meta name="description" content="Bikes shop, online shopping"/>
     <!–– описание на страницата ––>
-    <meta name="keywords" content="bikes,Varna,shop,best prices,repair,tires,retail"/>
+    <meta name="keywords"
+          content="bikes, Varna, shop, best prices, repair ,tires, retail, online shopping, backpacks, glasses, protectors, helmet, becycle, kolela, ekipirovka, planinski kolela, gradski kolela"/>
     <!–– думи за търсене ––>
     <title>Bikes</title> <!–– заглавие на страницата ––>
     <script src="js/empty.js"></script>
-    <link rel="stylesheet" href="css/indexpetya.css">
-    <!–– външен файл css ––>
-
-
+    <link rel="stylesheet" href="css/indexpetya.css">  <!–– външен файл css ––>
 </head>
 <body>
 <div id="main">
     <header class="header">
         <nav class="navbar">
             <ul class="menu cf">
-                <li><a href="">За нас</a></li>
+                <li><a href="indexpetya.html">Начало</a></li>
                 <li>
-                    <a href="">Велосипеди</a>
+                    <a href="htmls/bikes.html">Велосипеди</a>
                     <ul class="submenu">
-                        <li><a href="htmls/bikes.html#1">Градски</a></li>
-                        <li><a href="htmls/bikes.html#2">Детски</a></li>
-                        <li><a href="htmls/bikes.html#3">Електрически</a></li>
+                        <li><a href="htmls/bikes.html#1">Сгъваеми</a></li>
+                        <li><a href="htmls/bikes.html#3">Градски</a></li>
+                        <li><a href="htmls/bikes.html#2">Електрически</a></li>
                         <li><a href="htmls/bikes.html#4">Планински</a></li>
-                        <li><a href="htmls/bikes.html#5">Туристически</a></li>
-                        <li><a href="htmls/bikes.html#6">Шосейни</a></li>
+                        <li><a href="htmls/bikes.html#5">Шосейни</a></li>
+                        <li><a href="htmls/bikes.html#6">Туристически</a></li>
                     </ul>
                 </li>
-                <li><a href="">Екипировка</a>
+                <li><a href="htmls/equipment.html">Екипировка</a>
                     <ul class="submenu">
-                        <li><a href="">Мъжко облекло</a></li>
-                        <li><a href="">Дамско облекло</a></li>
+                        <li><a href="htmls/equipment.html#1">Каски</a></li>
+                        <li><a href="htmls/equipment.html#2">Очила</a></li>
+                        <li><a href="htmls/equipment.html#3">Протектори</a></li>
+                        <li><a href="htmls/equipment.html#4">Раници</a></li>
                     </ul>
                 </li>
-                <li><a href="htmls/team.html">Екип</a></li>
                 <li><a href="htmls/news.html">Новини</a></li>
                 <li><a href="htmls/repair.html">Поддръжка</a></li>
                 <li><a href="htmls/gallery.html">Галерия</a></li>
@@ -48,25 +47,32 @@
     </header>
 
     <div class="slideshow-container">
-        <div class="mySlides"><a href="htmls/gallery.html">
-            <img src="imgs/picture3.jpg">
-            <div class="text">Галерия</div>
-        </a>
+        <div class="mySlides">
+            <a href="htmls/gallery.html">
+                <img src="imgs/picture3.jpg">
+                <div class="text">Галерия</div>
+            </a>
         </div>
 
         <div class="mySlides">
-            <img src="imgs/picture4.jpg">
-            <div class="text"><a href="htmls/gallery.html">Галерия</a></div>
+            <a href="htmls/gallery.html">
+                <img src="imgs/picture4.jpg">
+                <div class="text">Галерия</div>
+            </a>
         </div>
 
         <div class="mySlides">
-            <img src="imgs/picture5.png">
-            <div class="text"><a href="htmls/gallery.html">Галерия</a></div>
+            <a href="htmls/gallery.html">
+                <img src="imgs/picture5.png">
+                <div class="text">Галерия</div>
+            </a>
         </div>
 
         <div class="mySlides">
-            <img src="imgs/picture6.jpg">
-            <div class="text"><a href="htmls/gallery.html">Галерия</a></div>
+            <a href="htmls/gallery.html">
+                <img src="imgs/picture6.jpg">
+                <div class="text">Галерия</div>
+            </a>
         </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -80,7 +86,6 @@
         <span class="dot" onclick="currentSlide(3)"></span>
         <span class="dot" onclick="currentSlide(4)"></span>
     </div>
-
     <script>
         var slideIndex = 1;
         showSlides(slideIndex);
@@ -116,6 +121,18 @@
 
     <div class="clear"></div>
 </div>
+<div class="aboutus">
+    <p style="text-indent: 50px">
+        Фирмата предлага богата гама велосипеди, отговарящи на потребностите на всеки велосипедист, както и резервни
+        части, инструменти и аксесоари на свeтовно известни производители, изявени с безупречно качество. При нас ще
+        откриете своя велосипед без значение дали сте професионалист или просто искате да покарате велосипед в
+        свободното си време. Основна наша цел е да задоволим максимално нуждите на клиента, да го упътим и посъветваме
+        при избора му на велосипед, да осигурим адекватно на потребностите му сервизно обслужване, като за целта
+        поддържаме екип от висококвалифициран, мотивиран и ориeнтиран към клиента персонал. Марките велосипеди, които
+        предлага фирмата са: Drag, Sprint, Cross, Raleigh, Ferrini, Shockblaze и други.
+    </p>
+</div>
+<br>
 <footer class="footer">
     <div class="row">
         <h4>Работно Време</h4>
@@ -157,8 +174,9 @@
         <br>
         <ul>
             <li><a href="indexpetya.html">Начало</a></li>
+            <li><a href="htmls/bikes.html">Велосипеди</a></li>
+            <li><a href="htmls/equipment.html">Екипировка</a></li>
             <li><a href="htmls/repair.html">Подръжка</a></li>
-            <li><a href="htmls/team.html">Екип</a></li>
             <li><a href="htmls/faq.html">Въпроси и отговори</a></li>
             <li><a href="htmls/gallery.html">Галерия</a></li>
             <li><a href="htmls/news.html">Новини</a></li>

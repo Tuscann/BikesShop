@@ -10,7 +10,7 @@
 .footer {
     padding: 12px 5px 12px 15px;
     display: flex;
-    background: #9041c1;
+    background: #34495e;
 }
 
 .footer > div {
@@ -20,7 +20,7 @@
 .rights {
     text-align: center;
     font-weight: bold;
-    background: #9041c1;
+    background: #34495e;
     padding: 12px 12px 12px 12px;
 }
 
@@ -51,6 +51,6 @@ a:visited {
 
 
 .last a:hover,.before a:hover {
-    background: #f141f4;
+    background: #3e1b31;
     font-weight: bold;
 }
